@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load  bootstrap_tags %}
+{% block content %}
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        {% for rent in rents %}
+            <tr>
+                <td><img height="100" width="100" src="{{ MEDIA_URL }}{{ rent.image }}"></td>
+                <td>{{ rent.name }}</td>
+                <td><a href="{% url 'buy_details' buy.id %}">{{ buy.name }}</a></td>
+                <td>{{ rent.description }}</td>
+                <td>{{ rent.price }}</td>
+                <td>
+                    <form method="post" action="{% url 'add_to_cart' rent.id %}">
+                        {% csrf_token %}
+                        Quantity
+                        <input name='quantity' type="number" min="1" max="999">
+                        <button type="submit">Add</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row">
+         
+        <div class="col-md-10 col-sm-9">
+            <table>
+                
+                <thead>
+       <tr>
+           
+           <th><h5>Photo Photo</h5></th>
+           <th>Name</th>
+           <th>Description</th>
+           <th>Price</th>
+            
+       </tr>
+       </thead>
+           <tr>
+              <tbody>
+               <td> <img src="{{ MEDIA_URL }}{{ buy.image }}"/></td>
+                 <td><h5>{{ buy.name }}</h5></td>
+                  <td><h5>{{ buy.description }}</h5></td> 
+                    <td><h5>{{ buy.price }}</h5></td> 
+                     
+             
+               </tbody>
+               </td>
+              </tr>
+              </table>
+           
+       
+      
+            <div class="row">
+                <div class="col-xs-9">
+                     
+                    <button class="btn btn-default" onclick="location.href='{% url 'buy' %}'">Back</button>
+                    
+                    
+                     
+                     </div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        {% for buyImage in buy.images.all %}
+        <img src="{{MEDIA_URL}}{{buyImage}}"/>
+        {% endfor %}
+        
+    </div>
+    
+    
+     
+
+{% endblock %}
