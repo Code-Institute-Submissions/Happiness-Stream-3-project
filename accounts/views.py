@@ -35,7 +35,7 @@ def login(request):
           else:
               form.add_error (None, "You username or password was not recognised")
                 
-          return redirect(get_index)
+          return redirect('create_for_sale_ad')
         
     else:
         form = UserLoginForm()

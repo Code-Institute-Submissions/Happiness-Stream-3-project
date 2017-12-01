@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from sell import urls as sell_urls
 from buy import urls as buy_urls
 from rent import urls as rent_urls
 from accounts.views import get_index
@@ -23,16 +24,15 @@ from blog import urls as blog_urls
 from blog.views import blogposts
 from about.views import get_index
 from django.views import static
-from checkout import urls as urls_checkout
 from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', get_index, name="home"),
     url(r'^accounts/',include(accounts_urls)),
-    url(r'^blog/',include(blog_urls), name='blog'),
+    url(r'^blog/',include(blog_urls)),
+    url(r'^sell/',include(sell_urls)),
     url(r'^buy/',include(buy_urls)),
     url(r'^rent/',include(rent_urls)),
-    url(r'^checkout/', include(urls_checkout)),
-    url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
+# url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
 ]

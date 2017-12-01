@@ -1,9 +1,12 @@
+
 <h2>comments</h2>
 
  
-<form method="POST" action="{% url 'addcomment' post.id %}">
+<form method="POST" action="{% url 'addcomment' post.slug %}">
         {% csrf_token %}
-        {{ form | as_bootstrap }}
+        
+        {{ form.as_p }}
+        
         <button type="submit">Add</button>
         
     

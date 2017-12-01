@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'blog',
     'buy',
     'rent',
-    'checkout',
+    'sell',
 ]
 
 MIDDLEWARE = [
@@ -139,6 +139,3 @@ AUTHENTICATION_BACKENDS = [
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
-STRIPE_PUBLISHABLE = os.environ.get("STRIPE_PUBLISHABLE")
-STRIPE_SECRET = os.environ.get("STRIPE_SECRET")
