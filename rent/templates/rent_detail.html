@@ -2,31 +2,26 @@
 {% block content %}
     <div class="row">
          
-        <div class="col-md-10 col-sm-9">
-            <table>
-                
-                <thead>
-       <tr>
-           
-           <th><h5>Renting Photo</h5></th>
-           <th>Name</th>
-           <th>Description</th>
-           <th>Price</th>
-            
-       </tr>
-       </thead>
-           <tr>
-              <tbody>
-               <td> <img src="{{ MEDIA_URL }}{{ rent.image }}"/></td>
-                 <td><h5>{{ rent.name }}</h5></td>
-                  <td><h5>{{ rent.description }}</h5></td> 
-                    <td><h5>{{ rent.price }}</h5></td> 
-                     
-             
-               </tbody>
-               </td>
-              </tr>
-              </table>
+        <div class="col-md-6">
+                <img src="{{ MEDIA_URL }}{{ rent.image }}" width="100%"/>
+                <div>
+                    {% for rentImage in rent_images %}
+                    <img src="{{MEDIA_URL}}{{rentImage}}" width="100px"/>
+                    {% endfor %}
+                    
+                </div>
+        </div>
+        <div class="col-md-6">
+                <h2>Name: </h2>
+                <p>{{ rent.name }}</p>
+                <h2>Description:</h2>
+                <p>{{ rent.description }}</p>
+                <h2>Price:</h2>
+                <p>€{{ rent.price }}</p>
+                <br>
+                <a href="{% url 'checkout' %}" class="btn-success btn-lg">RENT NOW</a>
+        </div>
+
            
        
       
@@ -42,14 +37,5 @@
         </div>
     </div>
     
-    <div>
-        {% for rentImage in rent.images.all %}
-        <img src="{{MEDIA_URL}}{{rentImage}}"/>
-        {% endfor %}
-        
-    </div>
-    
-    
-     
 
 {% endblock %}

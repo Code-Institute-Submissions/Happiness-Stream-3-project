@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Buy(models.Model):
     name = models.CharField(max_length=254, default='')
     description = models.TextField()
@@ -10,7 +11,7 @@ class Buy(models.Model):
         return self.name
         
 class BuyImage(models.Model):
-    buy= models.ForeignKey(Buy, related_name='images')
+    buy = models.ForeignKey(Buy, related_name='images')
     image = models.ImageField(upload_to='images')
     
     def __str__(self):

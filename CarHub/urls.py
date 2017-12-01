@@ -23,6 +23,7 @@ from blog import urls as blog_urls
 from blog.views import blogposts
 from about.views import get_index
 from django.views import static
+from checkout import urls as urls_checkout
 from .settings import MEDIA_ROOT
 
 urlpatterns = [
@@ -32,5 +33,6 @@ urlpatterns = [
     url(r'^blog/',include(blog_urls), name='blog'),
     url(r'^buy/',include(buy_urls)),
     url(r'^rent/',include(rent_urls)),
+    url(r'^checkout/', include(urls_checkout)),
     url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
 ]
