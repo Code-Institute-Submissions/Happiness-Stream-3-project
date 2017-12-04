@@ -5,114 +5,175 @@
 {% block content %}
 
 <div class="container">
+	<div class="row">
+        <div class="search">
+        <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
+        <button type="submit" class="btn btn-primary btn-sm">Search</button>
+</div>
+	</div>
+</div>
+  <br>
+   <br>
+
+<div class="container">
    
-      <div class="row">
-            <div class="col-12">
-                
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                     
-                      <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                      </ol>
-                    
-                      
-                      <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                          <img src="static/images/car1.png" alt="Welcome to CarHub" width:"100%" height:"auto">
-                          <div class="carousel-caption">
-                          <h4>Welcome to CarHub</h4>
-                          </div>
-                        </div>
-                        
-                        <div class="item">
-                          <img src="static/images/car2.png" alt="Welcome to CarHub" width:"100%" height:"auto">
-                          <div class="carousel-caption">
-                           <h3>Welcome to CarHub</h3>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <img src="static/images/car3.png" alt="Welcome to CarHub" width:"100%" height:"auto">
-                          <div class="carousel-caption">
-                           <h4>Welcome to CarHub</h4>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <br>
-                        <br>
-                        <span class="sr-only">Next</span>
-                        </a>
-                </div>
-              </div>
-        </div>
-           
-           
+     <div class="row">
+    <div class="col-md-12">
+    <div class="box-wrap">
+    <div class="box animate fadeInUp one">
+        
+   <a href="{% url 'create_for_sale_ad' %}"><h2>Advertise your car for only €5.00</h2></a>
+   <br>
+    <a href="{% url 'create_for_sale_ad' %}"><h2>PLACE AD</h2></a>
+    
+</div>
+</div>
+</div>
+</div>
+               
            
            
         <br>
-        <br>   
+        <br> 
         <div class="row">
-            <div class="box">
-            <div class="col-md-4">
-                      <h4>Ireland’s best selling car</h4>
-                      <p>Hyundai's Tucson crossover is the country’s best selling car,
-                      according to new figures. But latest SIMI statistics
-                      show that fewer cars were registered last month – 
-                      overall registrations were down by 21pc to 17,128.
-                      Registrations for the first two months of the year are down 8.4pc.
-                      Among the other best-sellers in the tighter market were 
-                      the Nissan Qashqai, Ford Focus, Skoda Octavia, Volkswagen Golf,
-                      Ford Fiesta, Toyota Corolla, KIA Sportage, Toyota Yaris and Renault Megane. </p>
-                      <a href="{% url 'posts' %}" class="btn btn-primary">Find out More</a>
-                     </div>
-                     </div>
-         
-         
-            <div class="box">
-            <div class="col-md-4">
-                    <h4>World’s Fastest Car</h4>
-                    <p>Last week electric car giants Tesla held 
-                    a launch event for their much anticipated all-electric ‘Semi Truck’. 
-                    The new electric lorry will achieve 500 miles of range at 
-                    maximum weight at 60mph and can go from zero-60mph in just five seconds, 
-                    even with a max load of 80,000lbs it can accelerate to 60mph in just 20 seconds.
-                    The Semi Truck also host’s advances in safety technology with motors 
-                    on each wheel which alter torque and eliminates the possibility of jackknifing.
-                    Drivers of the Semi Truck will sit centrally </p>
-                   <a href="{% url 'posts' %}" class="btn btn-primary">Find out More</a>
-                   <br/>
-                   <br/>
-                 </div> 
-                </div>
-                
-             <div class="box">
-             <div class="col-md-4">
-                    <h4>Nissan releases a new Car</h4>
-                    <p>Nissan has a new compact crossover joining the fray in 2018, 
-                    and you've probably seen it before. The Nissan Kicks went on sale last year 
-                    in certain markets outside the U.S., and it'll finally come to a dealership near you
-                    in June of next year (assuming you live in America). 
-                    But wait – doesn't Nissan already have a compact CUV to compete with the likes of the Chevy Trax and Honda HR-V? Not anymore. 
-                    The Juke is going for 2018, replaced by the significantly less polarizing Kicks.</p>
-                   <a href="{% url 'posts' %}" class="btn btn-primary">Find out More</a>
-                   <br/>
-                   <br/>
-                 </div> 
-                </div>   
+         <div class="col-md-4 col-md-offset-4">
+          <a href="{% url 'posts'%}"><h1> Best Selling Cars</h1></a>  
+          <br>
+          <br>
+         </div> 
+            
+            
+        </div>
         
-                 
-      </div>    
-    
+<div class="container-fluid">
+  <div class="row">
 
-
-       
+    <!-- column -->    
+    <div class="col-xs-4 col-sm-5cols">
+      <div class="thumbnail">
+        <a href="#"><img src="static/images/car5.png/"></a>
       </div>
+    </div>
+
+<!-- column -->    
+    <div class="col-xs-4 col-sm-5cols">
+      <div class="thumbnail">
+      <a href="#"><img src="static/images/car2.png/"></a>
+      </div>
+    </div>
+
+    <!-- column -->    
+    <div class="col-xs-4 col-sm-5cols">
+      <div class="thumbnail">
+    <a href="#"><img src="static/images/car9.jpg/"></a>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <!-- column -->    
+    <div class="col-xs-4 col-sm-5cols">
+      <div class="thumbnail">
+         <a href="#"><h4>Ireland’s best selling car</h4></a>
+       <p>Hyundai's Tucson crossover is the country’s best selling car,
+       according to new figures. But latest SIMI statistics show that fewer cars were registered last month
+       – overall registrations were down by 21pc to 17,128.
+       Registrations for the first two months of the year are down 8.4pc. 
+       Among the other best-sellers in the tighter market were the Nissan Qashqai, Ford Focus, Skoda Octavia,
+       Volkswagen Golf, Ford Fiesta, Toyota Corolla, KIA Sportage, Toyota Yaris and Renault Megane.</p>
+       <a href="{% url 'posts'%}"><button class="btn-btn-primary">Find Out More</a></button>
+      </div>
+     
+    </div>
+
+
+    <!-- column -->    
+    <div class="col-xs-4 col-sm-5cols">
+      <div class="thumbnail">
+           <a href="#"><h4>World’s Fastest Car</h4></a>
+       <p>Last week electric car giants Tesla held a launch event for their much anticipated all-electric 
+       ‘Semi Truck’. The new electric lorry will achieve 500 miles of 
+       range at maximum weight at 60mph and can go from zero-60mph in just five seconds, 
+       even with a max load of 80,000lbs it can accelerate to 60mph in just 20 seconds. 
+       The Semi Truck also host’s advances in safety technology with motors on each wheel which 
+       alter torque and eliminates the possibility of jackknifing.</p> 
+       <a href="{% url 'posts'%}"><button class="btn-btn-primary">Find Out More</a></button>
+      </div>
+    </div>
+
+
+    <!-- column -->    
+    <div class="col-xs-4 col-sm-5cols">
+      <div class="thumbnail">
+        <a href="#"><h4>Nissan releases a new Car</h4></a>
+       <p>Nissan has a new compact crossover joining the fray in 2018,
+       and you've probably seen it before. 
+       The Nissan Kicks went on sale last year in certain markets outside the U.S.,
+       and it'll finally come to a dealership near you in
+       June of next year (assuming you live in America). 
+       But wait – doesn't Nissan already have a compact CUV to compete 
+       with the likes of the Chevy Trax and Honda HR-V? Not anymore. 
+       The Juke is going for 2018, replaced by the significantly less polarizing Kicks.</p>
+        <a href="{% url 'posts'%}"><button class="btn-btn-primary">Find Out More</a></button>
+      </div>
+    </div>
+</div>
+ <div class="row">
+                     <div class="col-md-4 col-md-offset-4">
+                      <a href="{% url 'posts'%}"><h1> Trending Cars</h1></a> 
+                      <br>
+                      <br>
+                     </div>
+</div> 
+                
+
+    <!-- column -->
+<div class="row">
+    <div class="col-xs-4 col-sm-5cols">
+      <div class="thumbnail">
+        <a href="#"><img src="static/images/car10.jpg/"></a>
+      </div>
+    </div>
+
+
+    <!-- column -->    
+    <div class="col-xs-4 col-sm-5cols">
+      <div class="thumbnail">
+        <a href="#"><img src="static/images/car11.jpg/"></a>
+      </div>
+    </div>
+
+
+    <!-- column -->    
+    <div class="col-xs-4 col-sm-5cols">
+      <div class="thumbnail">
+        <a href="#"><img src="static/images/car12.jpg/"></a>
+      </div>
+    </div>
+</div>
+      <!-- column -->
+<!--<div class="row">-->
+<!--    <div class="col-xs-4 col-sm-5cols">-->
+<!--      <div class="thumbnail">-->
+<!--      <a href="#"><img src="static/images/car4.jpeg/"></a>  -->
+<!--    </div>-->
+
+ <!-- column -->     
+<!--    <div class="col-xs-4 col-sm-5cols">-->
+<!--      <div class="thumbnail">-->
+<!--        <a href="#"><img src="static/images/car10.jpg/"></a>-->
+<!--      </div>-->
+<!--    </div>-->
+
+     <!-- column -->    
+<!--    <div class="col-xs-4 col-sm-5cols">-->
+<!--      <div class="thumbnail">-->
+<!--       <a href="#"><img src="static/images/car12.jpg/"></a>-->
+<!--      </div>-->
+<!--    </div>-->
+ </div>
+</div>    
+</div>       
+       
+</div>
+
 {% endblock %}

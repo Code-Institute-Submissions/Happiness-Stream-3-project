@@ -1,0 +1,139 @@
+h3,p,h4{
+    text-align: center;
+    text-decoration: none;
+    text-indent: important;
+    letter-spacing: 1px;
+    
+}
+.btn{
+    text-align: center;
+}
+h2{
+ color:white;  
+ text-decoration: none;
+ text-align: center;
+}
+
+#search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
+}
+
+.search {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    float: left;
+    line-height: 22px;
+}
+
+    .search input {
+        position: absolute;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        height: 30px;
+        line-height: 18px;
+        padding: 0 2px 0 2px;
+        border-radius:1px;
+    }
+
+        .search:hover input, .search input:focus {
+            width: 200px;
+            margin-left: 0px;
+        }
+
+.btn {
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border-radius:1px;
+}
+
+
+.col-sm-5cols{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.colheading
+{
+  background:#1995dc;  
+}
+
+.box {
+  background: #1995dc;
+  width: 1200px;
+  height: 220px;
+  padding: 10px;
+  text-color: white;
+  border-radius: 7px;
+  float: center;
+  margin: 4px;
+  font-size: 12px;
+  font-family: 'Arial';
+  text-transform: sentence case;
+
+}
+.box1 {
+  background: #1995dc;
+  width: 1200px;
+  height: 50px;
+  border-radius: 7px;
+  float: center;
+  width:100%;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.one {
+-webkit-animation-delay: 0.4s;
+-moz-animation-delay: 0.4s;
+animation-delay: 0.4s;
+}
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+
+
+

@@ -20,3 +20,6 @@ def create_for_sale_ad(request):
     return render (request, 'sell.html', {'form':form})
 
     
+def do_search(request):
+    sell = Sell.objects.filter(name__icontains=request.GET['q'])
+    return render(request,"sell.html",{"sells":sells})
