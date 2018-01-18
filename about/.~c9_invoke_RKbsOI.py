@@ -1,9 +1,5 @@
-from django.shortcuts import render, redirect
-from django.core.mail import EmailMessage, send_mail
-from django.template import Context
-from django.conf import settings
-from django.template.loader import get_template
-from django.contrib import messages, auth
+from django.shortcuts import render
+
 from about.forms import ContactForm
 
 # Create your views here.
@@ -31,7 +27,7 @@ def get_contact(request):
             content = template.render(context)
             
             subject = 'Thanks for getting in touch!'
-            message = 'Thank you for contacting Car Hub. We will get back to you as soon as we can'
+            message = 'Thank you for contacting Urban Surf. We will get back to you as soon as we can'
             from_email = settings.EMAIL_HOST_USER
             to_email = [contact_email]
 
@@ -46,7 +42,7 @@ def get_contact(request):
             )
             email.send()
             messages.success(request, 'We have recieved your email & will get back to you as soon as possible!')
-            return redirect('home')
+            return redirect('index')
 
     return render(request, 'contact.html', {
         'form': form_class,

@@ -22,7 +22,9 @@ from accounts import urls as accounts_urls
 from blog import urls as blog_urls
 from blog.views import blogposts
 from about.views import get_index
+from about.views import get_contact
 from django.views import static
+from checkout import urls as urls_checkout
 from .settings import MEDIA_ROOT
 
 urlpatterns = [
@@ -32,6 +34,7 @@ urlpatterns = [
     url(r'^blog/',include(blog_urls)),
     url(r'^sell/',include(sell_urls)),
     url(r'^buy/',include(buy_urls)),
-   
-# url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
+    url(r'^checkout/', include(urls_checkout)),
+    url(r'^contact/', get_contact, name="contact"),
+    url(r'^media/(?P<path>.*)$', static.serve,{'document_root': MEDIA_ROOT}),
 ]

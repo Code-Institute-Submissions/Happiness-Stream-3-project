@@ -14,12 +14,12 @@
         </tr>
         </thead>
         <tbody>
-        {% for buy in buys %}
+        {% for ad in ads %}
             <tr>
-                <td><a href="{% url 'buy_details' buy.id %}"><img height="100" width="100" src="{{ MEDIA_URL }}{{ buy.image }}"></a></td>
-                <td><a href="{% url 'buy_details' buy.id %}">{{ buy.name }}</a></td>
-                <td>{{ buy.description }}</td>
-                <td>{{ buy.price }}</td>
+                <td><a href="{% url 'buy_details' ad.id %}"><img height="100" width="100" src="{{ MEDIA_URL }}{{ ad.image }}"></a></td>
+                <td><a href="{% url 'buy_details' ad.id %}">{{ ad.car_name }}</a></td>
+                <td>{{ ad.descriptions }}</td>
+                <td>{{ ad.price }}</td>
                 
             </tr>
         {% endfor %}

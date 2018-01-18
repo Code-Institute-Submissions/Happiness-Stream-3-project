@@ -14,7 +14,7 @@ def create_for_sale_ad(request):
             ad.seller = request.user
             ad.created_date = timezone.now()
             ad.save()
-            return redirect('home')
+            return redirect('checkout')
     else:
         form = SellForm()
     return render (request, 'sell.html', {'form':form})

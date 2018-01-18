@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+{% load  bootstrap_tags %}
+
+{% block content %}
+            <h4>CarHub</h4>
+            <h4>Telephone: +353-0000090000</h4>
+            <h4>Fax: +353-000000000</h4>
+            <h4>Address: CarHub, Athlumney Abbey Court, Dublin Road, Ballimun, Dublin 18</h4>
+            
+            <h4>Please complete the following form with any enquiry</h4>
+            
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form | as_bootstrap }}
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+{% endblock %}

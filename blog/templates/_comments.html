@@ -2,22 +2,23 @@
 <h2>comments</h2>
 
  
-<form method="POST" action="{% url 'addcomment' post.slug %}">
-        {% csrf_token %}
-        
-        {{ form.as_p }}
-        
-        <button type="submit">Add</button>
-        
-    
-</form>
+
  
 {% for comment in comments %}
 <div>
  
    <h3>{{ comment.title }}</h3>
+   <br>
    <p>{{ comment.content }}</p>
    <p><strong>{{ comment.author.username }}</strong> - {{ comment.created_date }}</p>
 </div>
-
+<br>
+<hr>
+<form method="POST" action="{% url 'addcomment' post.slug %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Add</button>
+        
+    
+</form>
 {% endfor %}
