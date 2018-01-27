@@ -1,171 +1,160 @@
+
 {% extends 'base.html' %}
 {% load static from staticfiles %}
 {% load  bootstrap_tags %}
 
 {% block content %}
 
-<div class="container">
-	<div class="row">
+
+<div class="row">
         <div class="search">
             <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
             <button type="submit" class="btn1 btn-primary btn-sm">Search</button>
         </div>
 	</div>
-</div>
+
   <br>
    <br>
-
-<div class="container">
    
- <div class="row">
-    <div class="col-md-12">
-       <div class="box-wrap">
-        <div class="box animate fadeInUp one">
-                
-           <a href="{% url 'create_for_sale_ad' %}"><h2 id="fadeheader">Advertise your car for only €5.00</h2></a>
-           <br>
-            <a href="{% url 'create_for_sale_ad' %}"><h2 id="fadeheader">PLACE AD</h2></a>
-            
-      </div>
-    </div>
-  </div>
-</div>
-               
-           
-           
-        <br>
-        <br> 
+<br />
+        <br />
+
+<div class="jumbotron">
+<!--<div class="container">-->
+<h1>No 1 Online Car Marketplace</h1>
+<p>Selling your car can be a real hassle. 
+So,let CarHub teams take the hassle out of selling your car for you!! </p>
+<a class="btn btn-primary btn-lg" href="{% url 'register' %}">Sign Up</a>
+ </div>
+ <!--</div>-->
+         
+<div class="container">
+  
         <div class="row">
          <div class="col-md-4 col-md-offset-4">
-          <a href="{% url 'buy'%}"><h1> Best Selling Cars</h1></a>  
+          <a href="{% url 'buy'%}"><h1> Trending Cars</h1></a>  
           <br>
-          <br>
+         
          </div> 
             
             
         </div>
         
-<div class="container-fluid">
-  <div class="row">
 
-    <!-- column -->    
-    <div class="col-xs-4 col-sm-5cols">
+  <div class="row">
+    <div class="col-md-4">
       <div class="thumbnail">
         <a href="{% url 'buy' %}"><img src="media/images/car4.jpg/"></a>
+        <h1 style="text-align:center;">BMV</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+    magna aliquam erat volutpat. 
+    </p>
+    <a href="{% url 'buy'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
+    
       </div>
     </div>
 
 <!-- column -->    
-    <div class="col-xs-4 col-sm-5cols">
+    <div class="col-md-4">
       <div class="thumbnail">
       <a href="{% url 'buy' %}"><img src="media/images/car13.png/"></a>
+      <h1 style="text-align:center;">Toyota</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+    magna aliquam erat volutpat.
+    
+    </p>
+    <a href="{% url 'buy'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
+    
       </div>
     </div>
 
     <!-- column -->    
-    <div class="col-xs-4 col-sm-5cols">
+    <div class="col-md-4">
       <div class="thumbnail">
     <a href="{% url 'buy' %}"><img src="media/images/car3.jpg/"></a>
+    <h1 style="text-align:center;">Nissan</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+    magna aliquam erat volutpat. 
+    </p>
+    <a href="{% url 'buy'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
+    
       </div>
     </div>
 </div>
+<!--</div>-->
+<!--<div class="container">-->
 <div class="row">
-         <div class="col-md-4 col-md-offset-4">
-          <a href="{% url 'posts'%}"><h1> Latest Blog Posts</h1></a>  
+         <div class="col-md-4 col-md-offset-4 ">
+             <div class="text-primary">
+          <a href="{% url 'posts'%}"><h1>Blog Posts</h1></a>  
           <br>
-          <br>
+          </div>
          </div> 
             
             
         </div>
-<div class="row">
-    <!-- column -->    
-    <div class="col-xs-4 col-sm-5cols">
-      <div class="thumbnail">
-         <a href="#"><h3>Ireland’s best selling car</h3></a>
-       <p>Hyundai's Tucson crossover is the country’s best selling car,
-       according to new figures. But latest SIMI statistics show that fewer cars were registered last month
-       – overall registrations were down by 21pc to 17,128.
-       Registrations for the first two months of the year are down 8.4pc. 
-       Among the other best-sellers in the tighter market were the Nissan Qashqai, Ford Focus, Skoda Octavia,
-       Volkswagen Golf, Ford Fiesta, Toyota Corolla, KIA Sportage, Toyota Yaris and Renault Megane.</p>
-       <a href="{% url 'posts'%}"><button class="btn-btn-primary">Find Out More</button></a>
-      </div>
-     
-    </div>
 
-
-    <!-- column -->    
-    <div class="col-xs-4 col-sm-5cols">
-      <div class="thumbnail">
-           <a href="#"><h3>World’s Fastest Car</h3></a>
+    <div class="row">
+    <div class="col-md-4">
+        <a href="#"><h3>World’s Fastest Car</h3></a>
        <p>Last week electric car giants Tesla held a launch event for their much anticipated all-electric 
        ‘Semi Truck’. The new electric lorry will achieve 500 miles of 
        range at maximum weight at 60mph and can go from zero-60mph in just five seconds, 
        even with a max load of 80,000lbs it can accelerate to 60mph in just 20 seconds. 
-       The Semi Truck also host’s advances in safety technology with motors on each wheel which 
-       alter torque and eliminates the possibility of jackknifing.</p> 
-       <a href="{% url 'posts'%}"><button class="btn-btn-primary">Find Out More</button></a>
-      </div>
+       </p> 
+       <a href="{% url 'posts'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
+    
     </div>
 
 
-    <!-- column -->    
-    <div class="col-xs-4 col-sm-5cols">
-      <div class="thumbnail">
-        <a href="#"><h3>Nissan releases a new Car</h3></a>
+    <!-- column -->  
+    
+    <div class="col-md-4">
+     <a href="#"><h3>Nissan releases a new Car</h3></a>
        <p>Nissan has a new compact crossover joining the fray in 2018,
        and you've probably seen it before. 
        The Nissan Kicks went on sale last year in certain markets outside the U.S.,
        and it'll finally come to a dealership near you in
-       June of next year (assuming you live in America). 
-       But wait – doesn't Nissan already have a compact CUV to compete 
-       with the likes of the Chevy Trax and Honda HR-V? Not anymore. 
-       The Juke is going for 2018, replaced by the significantly less polarizing Kicks.</p>
-       <a href="{% url 'posts'%}"><button class="btn-btn-primary">Find Out More</button></a>
+       June of next year. 
+       </p>
+       <a href="{% url 'posts'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
       </div>
+      
+      
+    <div class="col-md-4">
+         <a href="#"><h3>Ireland’s best selling car</h3></a>
+       <p>Hyundai's Tucson crossover is the country’s best selling car,
+       according to new figures. But latest SIMI statistics show that fewer cars were registered last month
+       – overall registrations were down by 21pc to 17,128.
+       </p>
+       <a href="{% url 'posts'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
+      </div>
+     
     </div>
 </div>
- <div class="row">
-                     <div class="col-md-4 col-md-offset-4">
-                      <a href="{% url 'buy'%}"><h1>Featured Cars</h1></a> 
-                      <br>
-                      <br>
-                     </div>
-</div> 
-                
-
-    <!-- column -->
-<div class="row">
-    <div class="col-xs-4 col-sm-5cols">
-      <div class="thumbnail">
-        <a href="{% url 'buy' %}"><img src="media/images/car2.jpg/"></a>
-      </div>
-    </div>
 
 
-    <!-- column -->    
-    <div class="col-xs-4 col-sm-5cols">
-      <div class="thumbnail">
-        <a href="{% url 'buy' %}"><img src="media/images/car1.jpeg/"></a>
-      </div>
-    </div>
 
 
-    <!-- column -->    
-    <div class="col-xs-4 col-sm-5cols">
-      <div class="thumbnail">
-        <a href="{% url 'buy' %}"><img src="media/images/car15.jpg/"></a>
-      </div>
-    </div>
-</div>
+ 
     
- </div>
-</div>    
-</div>       
        
-</div>
+       
+
 
 
 
 {% endblock %}
+
+
+
+
+
+
+
+
+
+

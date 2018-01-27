@@ -11,7 +11,7 @@
                         <img src="{{MEDIA_URL}}{{post.image}}" height=250px>
                     {% endif %}
                     <p>{{ post.content }}</p>
-                    <button class="btn btn-primary" onclick="location.href='{% url 'posts' %}'">Back To Blog</button>
+                    <button class="btn btn-primary btn-block" onclick="location.href='{% url 'posts' %}'">Back To Blog</button>
                     <p>{{ post.published_date }}| <strong>Views</strong> {{ post.views }}| <strong>Tag</strong> {{ post.tag }}</p>
                       
                 </div>

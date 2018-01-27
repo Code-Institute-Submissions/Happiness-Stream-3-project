@@ -10,9 +10,10 @@
                 <h2>Name: </h2>
                 <p>{{ ad.name }}</p>
                 <h2>Description:</h2>
+                <h3>A Perfect Car for Sale</3>
                 <p>{{ ad.description }}</p>
                 <h2>Price:</h2>
-                <button class="btn btn-default"><p>€{{ ad.price }}</p></button>
+                <button class="btn btn-primary"><p>€{{ ad.price }}</p></button>
                 <br>
         </div>
 
@@ -22,9 +23,9 @@
             <div class="row">
                 <div class="col-xs-9">
                      
-                    <button class="btn btn-default" onclick="location.href='{% url 'buy' %}'">Back</button>
+                    <button class="btn btn-primary" onclick="location.href='{% url 'buy' %}'">Back</button>
                     
-                    <a href="{% url 'contact' %}"><button class="btn btn-default">Contact Us</button></a>
+                    <a href="{% url 'contact' %}"><button class="btn btn-primary">Contact Us</button></a>
                      
                      </div>
             </div>
