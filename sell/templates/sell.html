@@ -3,8 +3,13 @@
 {% load  bootstrap_tags %}
 {% block content %}
 
-<h2>Sell your car today for just €5</h2>
-
+<div class="row">
+<div class="col-md-6 col-md-offset-3 ">
+<h1> Thanks for placing the ad.</h1>
+<h5>Each ad placed costs €5 and you will be directed to payment page</h5> 
+</div>
+</div>
+<br />
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form | as_bootstrap }}

@@ -5,8 +5,8 @@ from.forms import BlogPostForm, BlogCommentForm
 from django.utils import timezone
 from django.template.defaultfilters import slugify
 
-# Create your views here.
-@login_required
+
+# @login_required
 def blogposts(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
     return render(request,"blogposts.html", {'posts':posts})
@@ -18,7 +18,7 @@ def viewpost(request, slug):
     return render(request, "viewpost.html", {'post': this_post, 'comments': comments, 'form': form})
 
     
-@login_required
+# @login_required
 def newpost(request):
     if request.method == "POST":
         form = BlogPostForm(request.POST, request.FILES)
