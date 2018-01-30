@@ -15,17 +15,22 @@ Follow this link to view deployed version of the web app
 
 Technologies used:
 ===========
-Django framework
-Python
-HTML
-CSS
-Bootstrap
-SQLite database
+1.Django framework
+
+2.Python
+
+3.HTML
+
+4.CSS
+
+5.Bootstrap
+
+6.SQLite database
 
 
 Deployment / Hosting
 ====================
-Heroku with automatic deploys from GitHub
+The web app was deployed in Heroku with automatic deploys from GitHub
 
 Database
 ==============
