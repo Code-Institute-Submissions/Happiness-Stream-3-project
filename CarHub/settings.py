@@ -25,11 +25,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = os.environ.get("DEBUG",False)
+DEBUG = os.environ.get("DEBUG", False)
 USE_S3 = os.environ.get("USE_S3", False)
 
 
-ALLOWED_HOSTS = ['stream3project-happiness11.c9users.io', 'https://stream3-carhub.herokuapp.com/']
+ALLOWED_HOSTS = ['stream3project-happiness11.c9users.io', 'stream3-carhub.herokuapp.com']
 
 #gmail
 EMAIL_USE_TLS = True       
