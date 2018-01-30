@@ -1,18 +1,38 @@
+Car Hub - Stream 3 project
+==========================
+This Web App was built for the final project for the Code Institute's classroom bootcamp. 
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Purpose
+========
+This web app allows the user to sign up in order to sell a car online.
+The web app directs the user to payment page where the user is charge with €5 euros for placing an ad.
+But the user can have access to the Cars for sales page and CarHub blog without signing up.
+The main purpose of the this CarHub app is to help the user to sell their cars without hazzles and buy cars as well.
+
+Live Demo
+==========
+Follow this link to view deployed version of the web app
+
+Technologies used:
+===========
+Django framework
+Python
+HTML
+CSS
+Bootstrap
+SQLite database
 
 
-Hi there! Welcome to Cloud9 IDE!
+Deployment / Hosting
+====================
+Heroku with automatic deploys from GitHub
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+Database
+==============
+SQLite database was used & static and media files. 
+During the deployment, Heroku Postgres was used as the server database & an Amazon S3 bucket was set up to host all the static files. 
+Settings.py file was amended for the database & static files to point to the online resources.
 
-Happy coding!
-The Cloud9 IDE team
+Tests
+======
+Manual testing was used to test the functionality of the web app. 
