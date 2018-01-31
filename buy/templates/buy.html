@@ -4,6 +4,7 @@
 {% block content %}
 
     <table class="table">
+        
         <a class="bg-primary"><h1 style="text-align:center;"> Featured Cars</h1></a>
         <br>
         <thead>
@@ -18,13 +19,16 @@
         <tbody>
         {% for ad in ads %}
             <tr>
+                <!--<div id="img">-->
                 <td><a href="{% url 'buy_details' ad.id %}"><img height="100" width="100" src="{{ MEDIA_URL }}{{ ad.image }}"></a></td>
                 <td><a href="{% url 'buy_details' ad.id %}">{{ ad.car_name }}</a></td>
+                <!--</div>-->
                 <td>{{ ad.descriptions }}</td>
                 <td>{{ ad.price }}</td>
                 
             </tr>
         {% endfor %}
         </tbody>
+        
     </table>
 {% endblock %}

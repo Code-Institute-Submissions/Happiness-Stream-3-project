@@ -35,13 +35,11 @@ h2{
         
 .search {
     margin-top:-50px;
-    /*padding-top: 100px;*/
     width: 230px;
     height: 0px;
     position: relative;
     left: 9px;
     float: right;
-    /*line-height: 22px;*/
     
 }
 
@@ -67,7 +65,7 @@ h2{
         border-radius:1px;
     }
 
-  .search:hover input, .search input:focus {
+ .search:hover input, .search input:focus {
             width: 200px;
             margin-left: 0px;
         }
@@ -80,18 +78,6 @@ h2{
     text-align: center;
 }
 
-
-/*.col-sm-5cols{*/
-/*    position: relative;*/
-/*    min-height: 1px;*/
-/*    padding-right: 10px;*/
-/*    padding-left: 10px;*/
-/*}*/
-
-/*.colheading*/
-/*{*/
-/*  background:#1995dc;  */
-/*}*/
 
 .box {
   background: #1995dc;
@@ -127,41 +113,16 @@ h2{
 animation-delay: 0.4s;
 }
 
-
-/*@-webkit-keyframes fadeIn {*/
-/*  from {*/
-/*    opacity: 0;*/
-/*  }*/
-
-/*  to {*/
-/*    opacity: 1;*/
-/*  }*/
-/*}*/
-
-/*@keyframes fadeIn {*/
-/*  from {*/
-/*    opacity: 0;*/
-/*  }*/
-
-
-/*  to {*/
-/*    opacity: 1;*/
-/*  }*/
-/*}*/
-
-
-/*.fadeIn {*/
-/*  -webkit-animation-name: fadeIn;*/
-/*  animation-name: fadeIn;*/
-/*}*/
-
-
 img {
-    width: 100%;
+    width:100%;
     height: auto;
     
 }
-
+#img {
+    width:200px;
+    height: 200px;
+    
+}
 .navbar-custom{
     background-color:red;
     border-color: green;
@@ -180,7 +141,6 @@ img {
     margin-bottom: 0 !important;
     border: 5px solid #178acc;;
 }
-
 
 .jumbotron .btn {
   font-size: 10px;
@@ -205,23 +165,21 @@ img {
   text-align: center;
 }
 
-.header{
+footer {
+  background-color:#3379b7;
+  padding: 1rem;
+  height:70px;
   width:100%;
-  height: 50px;
-}
-
-footer
-{
-  width:100%;
-  height:10px;
+  text-align: center;
 }
 
 
-/*=====================media================ */
+/*=====================media queries================ */
 
 
 @media(min-width:768px){
-  
+
+
 .box2 {
     background-color:lightblue;
     width: 400px;
@@ -231,14 +189,22 @@ footer
 }
     
 body {
-    padding-top: 50px;
+    padding-top: 90px;
 }
 
+.navbar a {
+  text-align: center;
+  padding: 10px 9px;
+  text-decoration: none;
+ 
+}
 
 }
+
 
 @media(min-width:992px){
-  
+    
+ 
 .box2 {
     background-color:lightblue;
     width: 700px;
@@ -250,13 +216,18 @@ body {
 }
     
 body {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 
 }
 @media(min-width:1200px){
-  
+    
+    
+ .header{
+  width:100%;
+  height: 20px;
+} 
 .box2 {
     background-color:lightblue;
     width: 800px;
@@ -267,7 +238,7 @@ body {
 }
     
 body {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 

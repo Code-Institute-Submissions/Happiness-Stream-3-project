@@ -7,13 +7,13 @@ from blog.views import blogposts
 
 # Create your views here.
 def get_index(request):
-    return render(request, 'index.html')
+    return render(request, 'about.html')
     
 # Create your views here.
 def logout(request):
     auth.logout(request)
     messages.success(request, 'You have successfully logged out')
-    return redirect(reverse('home'))
+    return render(request, 'about.html')
     
     
 def login(request):
@@ -25,13 +25,13 @@ def login(request):
 
           if user is not None:
                 auth.login(request, user)
-                messages.error(request,"You have successfully logged in")
+                messages.success(request,"You have successfully logged in")
                 
                 if request.GET and request.GET['next'] !='':
                     next = request.GET['next']
                     return HttpResponseRedirect(next)
                 else:
-                    return redirect('home')
+                    return render(request, 'about.html')
           else:
               form.add_error (None, "You username or password was not recognised")
                 
