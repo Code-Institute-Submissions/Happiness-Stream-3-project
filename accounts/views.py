@@ -31,7 +31,7 @@ def login(request):
                     next = request.GET['next']
                     return HttpResponseRedirect(next)
                 else:
-                    return render(request, 'about.html')
+                    return redirect('home')
           else:
               form.add_error (None, "You username or password was not recognised")
                 

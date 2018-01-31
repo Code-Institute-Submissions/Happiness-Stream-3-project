@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = os.environ.get("DEBUG", False)
-USE_S3 = os.environ.get("USE_S3", False)
+USE_S3 = os.environ.get("USE_S3", True)
 
 
 ALLOWED_HOSTS = ['stream3project-happiness11.c9users.io', 'stream3-carhub.herokuapp.com']
@@ -150,6 +150,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 STRIPE_PUBLISHABLE = os.environ.get("STRIPE_PUBLISHABLE")
 STRIPE_SECRET = os.environ.get("STRIPE_SECRET")
+
+
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

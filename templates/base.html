@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="{% static "css/style.css" %}">
     <link href="https://fonts.googleapis.com/css?family=Germania+One|Monoton|Nosifer|Roboto" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
    
      {% block head_js %}{% endblock %}
 </head>
@@ -109,29 +110,15 @@
 <br>
 
 <footer>
-        
-         
-        
-    	    <h2><a href="{% url 'home' %}">CarHub</h2></a>
-    	    <p><strong><a href="{% url 'create_for_sale_ad' %}">Place an advert</strong></a> | <strong><a href="{% url 'contact' %}">Contact Us</strong></a> | <strong><a href="{% url 'home' %}">Latest Cars</strong></a></p>
-    	    
-              <a href="www.linkedin.com"><i class="fa fa-linkedin-square icon" aria-hidden="true"></i></a>
-                <a href="www.instagram.com"><i class="fa fa-instagram-square icon" aria-hidden="true"></i></a>
-                <a href="www.twitter.com"><i class="fa fa-twitter-square icon" aria-hidden="true"></i></a>
-                <a href="www.youtube.com"><i class="fa fa-youtube-square icon" aria-hidden="true"></i></a>
-                <a href="www.google.com"><i class="fa fa-google-square icon" aria-hidden="true"></i></a>
-                <a href="www.facebook.com"><i class="fa fa-facebook-square icon" aria-hidden="true"></i></a>
-            
-    		<div class="navbar-text pull-right">
-    			<p>&copy CarHub 2017</p>
-    		</div>
-
-       
-
- 
+    <h2><a href="{% url 'home' %}">CarHub</h2></a>
+    <p><strong><a href="{% url 'create_for_sale_ad' %}">Place an advert</strong></a> | <strong><a href="{% url 'contact' %}">Contact Us</strong></a> | <strong><a href="{% url 'home' %}">Latest Cars</strong></a></p>
+    <!--<div class="navbar-text pull-right">-->
+        <br />
+		<h4>&copy CarHub 2017</h4>
+	</div>
 </footer>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="static/js/script.js"></script>
 </body>
