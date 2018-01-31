@@ -11,7 +11,7 @@ The main purpose of the this CarHub app is to help the user to sell their cars w
 
 Live Demo
 ==========
-Follow this link to view deployed version of the web app
+Follow this link to view deployed version of the web app: https://stream3-carhub.herokuapp.com/
 
 Technologies used:
 ===========
