@@ -2,14 +2,16 @@
 
 {% block content %}
     <div class="row">
-    
         <div class="col-md-10 col-sm-9">
             <h3>{{ post.title }}</h3>
+            <br />
             <div class="row">
                 <div class="col-md-12 col-sm-9">
                     {% if post.image %}
-                        <img src="{{MEDIA_URL}}{{post.image}}" height=250px>
+                        <img src="{{MEDIA_URL}}{{post.image}}" height="100%" width="100%" >
                     {% endif %}
+                    <br />
+                    <br />
                     <p>{{ post.content }}</p>
                     <button class="btn btn-primary btn-block" onclick="location.href='{% url 'posts' %}'">Back To Blog</button>
                     <p>{{ post.published_date }}| <strong>Views</strong> {{ post.views }}| <strong>Tag</strong> {{ post.tag }}</p>
@@ -17,7 +19,7 @@
                 </div>
            
             </div>
-            <hr>
+        
         {% include '_comments.html' %}
         </div>
     </div>

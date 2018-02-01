@@ -18,7 +18,7 @@
         <tbody>
         {% for ad in ads %}
             <tr>
-                <td><a href="{% url 'buy_details' ad.id %}"><img height="100" width="100" src="{{ MEDIA_URL }}{{ ad.image }}"></a></td>
+                <td><a href="{% url 'buy_details' ad.id %}"><img src="{{ MEDIA_URL }}{{ ad.image }} height="100%" width="100%"></a></td>
                 <td><a href="{% url 'buy_details' ad.id %}">{{ ad.car_name }}</a></td>
                 <td>{{ ad.descriptions }}</td>
                 <td>{{ ad.price }}</td>
@@ -26,5 +26,5 @@
         {% endfor %}
         </tbody>
         
-    </table>
+</table>
 {% endblock %}

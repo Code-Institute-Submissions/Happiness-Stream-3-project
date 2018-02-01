@@ -18,136 +18,118 @@
    
 <br />
         <br />
-
-<div class="jumbotron">
-<h1>No 1 Online Car Marketplace</h1>
-<p>Selling your car can be a real hassle. 
-So,let CarHub teams take the hassle out of selling your car for you!! </p>
-<a class="btn btn-primary btn-lg" href="{% url 'register' %}">Sign Up</a>
- </div>
+    <div class="jumbotron">
+        <h1>No 1 Online Car Marketplace</h1>
+        <p>Selling your car can be a real hassle. 
+        So,let's CarHub teams take the hassle out of selling your car for you!! </p>
+        <a class="btn btn-primary btn-lg" href="{% url 'register' %}">Sign Up</a>
+    </div>
  
          
 <div class="container">
   
-        <div class="row">
+    <div class="row">
          <div class="col-md-4 col-md-offset-4">
-          <a href="{% url 'buy'%}"><h1> Trending Cars</h1></a>  
+             <a href="{% url 'buy'%}"><h1> Trending Cars</h1></a>  
           <br>
          
          </div> 
+    </div>    
             
-            
-        </div>
+        
         
 
-  <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="#"><img src="{% static 'images/car4.jpg'%}"></a>
-        <h1 style="text-align:center;">BMW </h1>
-    <p>The BMW Series Gran Tourer is proof that compact dimensions, 
-    functionality and variability can be combined perfectly with a dynamic design. 
-    Be it sporting activities, driving holidays or for day-to-day use, t
-    his vehicle is always raring to go – with all the dynamics you expect of a BMW 
-    </p>
-    <a href="{% url 'buy'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
-    
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="thumbnail">
-      <a href="#"><img src="{% static 'images/car13.png' %}"></a>
-      <h1 style="text-align:center;">Toyota RAV4</h1>
-    <p>The Toyota RAV4 has evolved over time. What started as a compact crossover SUV with commuters in mind 
-    has become one of the more popular family vehicles in the Toyota lineup. 
-    The current RAV4 has finally scrubbed away the final cues of its 
-    former SUV ambitions.
-    </p>
-    <a href="{% url 'buy'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
-    
-      </div>
-    </div>
-
-       
-    <div class="col-md-4">
-      <div class="thumbnail">
-    <a href="#"><img src="{% static 'images/car3.jpg' %}"></a>
-    <h1 style="text-align:center;">Nissan</h1>
-    <p>THE NISSAN QASHQAI is known as the King of the Crossovers, 
-    because it’s the car that kicked off the crossover craze.
-     There are more than 2.5 million Qashqais on the road in Europe and since its launch in 2007, 
-     almost 35,000 have been registered in Ireland alone 
-    </p>
-    <a href="{% url 'buy'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
-    
-      </div>
-    </div>
-</div>
-
-<div class="row">
-         <div class="col-md-4 col-md-offset-4 ">
-             <div class="text-primary">
-          <a href="{% url 'posts'%}"><h1>Blog Posts</h1></a>  
-          <br>
-          </div>
-         </div> 
+    <div class="row">
+        <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="#"><img src="{% static 'images/car4.jpg'%}"></a>
+                <h1 style="text-align:center;">BMW </h1>
+                <p>The BMW Series Gran Tourer is proof that compact dimensions, 
+                functionality and variability can be combined perfectly with a dynamic design. 
+                Be it sporting activities, driving holidays or for day-to-day use, t
+                his vehicle is always raring to go – with all the dynamics you expect of a BMW 
+                </p>
+               <a href="{% url 'buy'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
             
-            
+             </div>
         </div>
 
-    <div class="row">
-    <div class="col-md-4">
-        <a href="#"><h3> Friendly car Manufacturer</h3></a>
-       <p>BMW is the most climate-friendly car manufacturers, according to new research. 
-       The three aims are based on recommendations from the international Task Force on Climate-related Financial Disclosures (TCFD), 
-       set up in 2015 and backed by Bank of England Governor Mark Carney.Right now, hybrids have 2 percent of the passenger car market in the U.S. 
-       Even in EV-friendly California, battery-powered cars only hold 2.7 percent.
-       
-       </p> 
-       <a href="{% url 'posts'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
+       <div class="col-md-4">
+         <div class="thumbnail">
+              <a href="#"><img src="{% static 'images/car13.png' %}"></a>
+              <h1 style="text-align:center;">Toyota RAV4</h1>
+              <p>The Toyota RAV4 has evolved over time. What started as a compact crossover SUV with commuters in mind 
+              has become one of the more popular family vehicles in the Toyota lineup. 
+              The current RAV4 has finally scrubbed away the final cues of its 
+              former SUV ambitions.
+            </p>
+         <a href="{% url 'buy'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
     
+        </div>
     </div>
 
+       
+    <div class="col-md-4">
+      <div class="thumbnail">
+            <a href="#"><img src="{% static 'images/car3.jpg' %}"></a>
+            <h1 style="text-align:center;">Nissan</h1>
+            <p>THE NISSAN QASHQAI is known as the King of the Crossovers, 
+             because it’s the car that kicked off the crossover craze.
+             There are more than 2.5 million Qashqais on the road in Europe and since its launch in 2007, 
+             almost 35,000 have been registered in Ireland alone 
+            </p>
+            <a href="{% url 'buy'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
+         </div>
+      </div>
+  </div>
 
+    <div class="row">
+         <div class="col-md-4 col-md-offset-4 ">
+             <div class="text-primary">
+                 <a href="{% url 'posts'%}"><h1>Blog Posts</h1></a>  
+                <br>
+              </div>
+         </div> 
+     </div>
+
+    <div class="row">
+          <div class="col-md-4">
+               <a href="#"><h3> Friendly car Manufacturer</h3></a>
+               <p>BMW is the most climate-friendly car manufacturers, according to new research. 
+               The three aims are based on recommendations from the international Task Force on Climate-related Financial Disclosures (TCFD), 
+               set up in 2015 and backed by Bank of England Governor Mark Carney.Right now, hybrids have 2 percent of the passenger car market in the U.S. 
+               Even in EV-friendly California, battery-powered cars only hold 2.7 percent.
+               </p>
+               <a href="{% url 'posts'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
+          </div>
     
     <div class="col-md-4">
-     <a href="#"><h3>Nissan releases a new Car</h3></a>
-       <p>Nissan has a new compact crossover joining the fray in 2018,
-       and you've probably seen it before. 
-       The Nissan Kicks went on sale last year in certain markets outside the U.S.,
-       and it'll finally come to a dealership near you in
-       June of next year. But wait – doesn't Nissan already have a compact CUV to compete with the likes of the Chevy Trax and Honda HR-V? 
-       Not anymore. The Juke is going for 2018, replaced by the significantly less polarizing Kicks.
-       </p>
-       <a href="{% url 'posts'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
-      </div>
+               <a href="#"><h3>Nissan releases a new Car</h3></a>
+               <p>Nissan has a new compact crossover joining the fray in 2018,
+               and you've probably seen it before. 
+               The Nissan Kicks went on sale last year in certain markets outside the U.S.,
+               and it'll finally come to a dealership near you in
+               June of next year. But wait – doesn't Nissan already have a compact CUV to compete with the likes of the Chevy Trax and Honda HR-V? 
+               Not anymore. The Juke is going for 2018, replaced by the significantly less polarizing Kicks.
+               </p>
+               <a href="{% url 'posts'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
+     </div>
       
       
     <div class="col-md-4">
-         <a href="#"><h3>Ireland’s best selling car</h3></a>
-       <p>Hyundai's Tucson crossover is the country’s best selling car,
-       according to new figures. But latest SIMI statistics show that fewer cars were registered last month
-       – overall registrations were down by 21pc to 17,128.Registrations for the first two months of the year are down 8.4pc. 
-       Among the other best-sellers in the tighter market were the Nissan Qashqai, 
-       Ford Focus, Skoda Octavia, Volkswagen Golf, Ford Fiesta. Toyota Corolla.
-      </p>
-       <a href="{% url 'posts'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
+              <a href="#"><h3>Ireland’s best selling car</h3></a>
+               <p>Hyundai's Tucson crossover is the country’s best selling car,
+               according to new figures. But latest SIMI statistics show that fewer cars were registered last month
+               – overall registrations were down by 21pc to 17,128.Registrations for the first two months of the year are down 8.4pc. 
+               Among the other best-sellers in the tighter market were the Nissan Qashqai, 
+               Ford Focus, Skoda Octavia, Volkswagen Golf, Ford Fiesta. Toyota Corolla.
+              </p>
+              <a href="{% url 'posts'%}"><button class="btn btn-primary  btn-lg btn-block">Find Out More</button></a>
       </div>
      
     </div>
-</div>
-
-
-
-
- 
     
-       
-       
-
-
-
+</div>
 
 {% endblock %}
 
